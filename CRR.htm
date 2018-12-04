@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Choral Rehearsal Hall</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style> 
+
+body, html {
+    font-family: Futura;
+    background-color: #eee;
+}
+h3 {
+	font-size:2vw;
+	color: black;
+	font-family: Futura;
+	margin:auto;
+	text-align:center;
+
+    margin-top:20%;
+	border-top: 1px solid white;
+
+}
+p {
+	font-size:2vw;
+	color: black;
+	font-family: Futura;
+	margin:auto;
+	text-align:center;
+	padding:5px;
+  
+	border-top: 1px solid white;
+
+}
+
+button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 1vw 2vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 30%;
+    margin-left: 30%;
+    box-shadow: 0 4px 18px 0 rgba(0,0,0,0.9)
+    
+}
+button:hover {
+ 
+    cursor: pointer;
+
+}
+section {
+	
+	margin-right:15%;
+	margin-left:15%;
+	text-align: center;
+
+}
+
+  h2 {
+	font-size:3vw;
+	color:Black;
+	font-family: Futura;
+	text-align:center;
+	font-variant:small-caps;
+	margin-top: 50px;
+   	margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 80px;
+	
+}
+.header {
+    margin: 0 auto;
+  
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background-color: #eee;
+    font-size:3vw;
+	color: black;
+	font-family: Futura;
+	text-align:center;
+	font-variant:small-caps;
+    padding: 10px;
+    top: 0px;
+}
+#page-wrapper {
+    position:relative;
+}
+</style>
+</head>
+<body>
+<html>
+<div id="page wrapper">
+<header class="header">Maps of the Holtschneider Performance Center</header>
+<h3>First Floor</h3>
+<div class="container">
+<section>
+    
+<img id="myImage" src="hpcFloor1(a).jpg" alt="" style="width: 80%;"/>
+<br></br>
+<br></br>
+<button onclick="document.getElementById('myImage').src='hpcFloor1(b).jpg'">Click for Directions</button>
+
+<br></br>
+<button onclick="document.getElementById('myImage').src='hpcFloor1(a).jpg'">Regular Map</button>
+</section>
+<br></br>
+<br></br>
+
+<h3>Second Floor</h3>
+<br></br>
+<section>
+<img id="myImage2" src="hpcFloor2(a).jpg" alt="" style="width: 80%;"/>
+<br></br>
+<br></br>
+<button onclick="document.getElementById('myImage2').src='hpcCRR.jpg'">Click for Directions</button>
+
+<br></br>
+<button onclick="document.getElementById('myImage2').src='hpcFloor2(a).jpg'">Regular Map</button>
+</section>
+<br></br>
+<br></br>
+</div>
+</div>
+</body>
+</html>
