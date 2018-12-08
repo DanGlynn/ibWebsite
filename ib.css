@@ -1,0 +1,86 @@
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-weight: 150;
+  background-color: #e3e6d8;
+}
+.ib-top,.ib-bottom{position:fixed;width:100%;z-index:1}
+.ib-top{top:0}.ib-bottom{bottom:0}
+.ib-bar{width:100%;overflow:hidden}
+.ib-center .ib-bar{display:inline-block;width:auto;line-height:18px;}
+.ib-bar .ib-bar-item{float:left;width:auto;border:1px;display:block;outline:0;line-height:18px;}
+.ib-bar .ib-dropdown-hover,.ib-bar .ib-dropdown-click{position:static;float:left}
+.ib-bar .ib-button{white-space:normal;background-color: rgba(199,153,136, .7);color: white; font-size: 18px;padding:5px 10px 5px 10px;}
+.ib-bar-block .ib-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.ib-bar-block.ib-center .ib-bar-item{text-align:center}
+.ib-block{display:block;width:100%}
+.ib-card,.ib-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.ib-right{float:right!important}
+.ib-wide{letter-spacing:4px}
+@media (max-width:600px){
+  .ib-hide-small{display:none!important
+   }
+ }
+@media (max-width:992px) and (min-width:601px){
+  .ib-hide-medium{display:none!important
+    }
+  }
+@media (min-width:993px){
+  .ib-hide-large{display:none!important
+  }
+}
+#myNavbar{
+
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 82px;
+    left: 0;
+    background-color: #c79988;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-top: 1px solid white;
+    z-index: 6;
+    overflow: hidden;
+    font-variant: small-caps;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    font-family: "Raleway", sans-serif
+}
+
+.sidenav a:hover {
+    color: black;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .2s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.ib-tope,.ib-hover-tope:hover{color:#fff!important;background-color:rgb(199,153,136)!important}
