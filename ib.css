@@ -17,6 +17,7 @@ body {
 .ib-block{display:block;width:100%}
 .ib-card,.ib-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
 .ib-right{float:right!important}
+.ib-left{float:left!important}
 .ib-wide{letter-spacing:4px}
 @media (max-width:600px){
   .ib-hide-small{display:none!important
@@ -61,7 +62,10 @@ body {
 }
 
 .sidenav a:hover {
-    color: black;
+    color: #8c8c8c;
+}
+nav ul li a:hover {
+ color: #8c8c8c;
 }
 
 .sidenav .closebtn {
