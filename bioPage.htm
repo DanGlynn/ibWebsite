@@ -105,6 +105,13 @@ a {
   letter-spacing: 0px;
 
 }
+.animate-opacity{
+  animation:opac 3.0s
+}@keyframes opac{
+    from{opacity:0
+      } to{opacity:1
+}
+}
 </style>
 <body class="animate-opacity">
 
@@ -118,11 +125,11 @@ a {
   <div class="ib-bar ib-tope ib-card" id="myNavbar">
     <a href="#" class="ib-bar-item ib-button ib-wide">
 <!-- Looking to integrate in logo image here  -->
- <img id="ibLogo" src="ibLogo.jpg"/>
+ <img id="ibLogo" src="ibLogo2.jpg"/>
     </a>
     <!-- Left-sided navbar links -->
     <div class="ib-left ib-hide-small">
-      <a href="#" class="ib-bar-item ib-button">Bio</a>
+      <a href="bioPage.htm" class="ib-bar-item ib-button">Bio</a>
       <a href="#" class="ib-bar-item ib-button">Listen</a>
       <a href="#" class="ib-bar-item ib-button">Lessons</a>
       <a href="#" class="ib-bar-item ib-button">Home</a>
@@ -138,7 +145,7 @@ a {
 <!-- Sidenav for screens < 450px -->
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Bio</a>
+  <a href="bioPage.htm">Bio</a>
   <a href="#">Listen</a>
   <a href="#">Lessons</a>
   <a href="#">Home</a>
