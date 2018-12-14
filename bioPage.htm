@@ -22,19 +22,19 @@ a {
   text-decoration: none;
 }
 .ib-top,.ib-bottom{position:fixed;width:100%;z-index:1}
-.ib-top{top:0;}.ib-bottom{bottom:0}
+.ib-top{top:0; left:0;}.ib-bottom{bottom:0}
 .ib-top a:hover {color: #8c8c8c;}
 .ib-bar{width:100%;overflow:hidden}
 .ib-center .ib-bar{display:inline-block;width:auto;line-height:18px;}
 .ib-bar .ib-bar-item{float:right;width:auto;border:1px;display:block;outline:0;line-height:18px;}
 .ib-bar .ib-dropdown-hover,.ib-bar .ib-dropdown-click{position:static;float:left}
-.ib-bar .ib-button{white-space:normal;background-color: #e3e6d8;color: #000333; font-size: 25px;padding:10px 10px 5px 10px;text-decoration: none;}
+.ib-bar .ib-button{white-space:normal;background-color: #e3e6d8;color: #000333; font-size: 25px;padding:20px 10px 5px 10px;text-decoration: none;}
 .ib-bar-block .ib-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
 .ib-bar-block .ib-center .ib-bar-item{text-align:center}
 .ib-block{display:block;width:100%}
 .ib-card-small{box-shadow:0 2px 2px 0 rgba(0,0,0,0.16)} */
 .ib-right{float:right!important;padding:5px;}
-.ib-left{float:left!important;padding:5px;}
+.ib-left{float:left!important;padding:10px;}
 .ib-wide{letter-spacing:4px;}
 @media (max-width:600px){
   .ib-hide-small{display:none!important
@@ -43,13 +43,10 @@ a {
 @media (max-width:992px) and (min-width:601px){
   .ib-hide-medium{display:none!important
     }
-  .ib-bar-item {
-    display: inline-block;
-  
-    text-align: center;
-
-   }
+  .ib-left{float:left!important;padding:5px;
+    }
   }
+
 @media (min-width:993px){
   .ib-hide-large{display:none!important
   }
@@ -102,12 +99,46 @@ a {
 .ib-tope,.ib-hover-tope:hover{color:#fff!important;background-color:#e3e6d8!important}
 #ibLogo {
 
-	height:85px;
+	height:65px;
 	width:auto;
 	padding: 0px 20px 0px 0px;
   letter-spacing: 0px;
-
 }
+@media screen and (max-width:750px){
+  #ibLogo {
+    height:60px;
+	  width:auto;
+	  padding: 0px 5px 0px 0px;
+  }
+}
+@media screen and (max-width:700px){
+  #ibLogo {
+    height:50px;
+	  width:auto;
+	  padding: 0px 5px 0px 0px;
+  }
+}
+#box-container{
+    display: flex;
+    height: 100vh;
+}
+
+#box-1 {
+    background-color: #e3e6d8;
+    width: 10%;
+    height: 100%;
+}
+#box-2 {
+  background-color: #faffff;
+  width: 80%;
+  height: 100%;
+}
+#box-3{
+  background-color: #e3e6d8;
+  width: 10%;
+  height: 100%;
+}
+
 </style>
 <body class="animate-opacity">
 
@@ -121,7 +152,7 @@ a {
   <div class="ib-bar ib-tope ib-card" id="myNavbar">
     <a href="#" class="ib-bar-item ib-button ib-wide">
 <!-- Looking to integrate in logo image here  -->
- <img id="ibLogo" src="ibLogo.jpg"/>
+ <img id="ibLogo" src="ibLogo2.jpg"/>
     </a>
     <!-- Left-sided navbar links -->
     <div class="ib-left ib-hide-small">
@@ -158,8 +189,12 @@ function closeNav() {
 }
 </script>
 
-<!-- Old template reference <img class="center-fit" src="image.jpg"> -->
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+  <div id="box-3"></div>
 </div>
+
 
 
   </body>
