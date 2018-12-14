@@ -86,5 +86,12 @@ nav ul li a:hover {
   .sidenav a {font-size: 18px;}
 }
 
+.animate-opacity{
+  animation:opac 3.0s
+}@keyframes opac{
+    from{opacity:0
+      } to{opacity:1
+}
+}
 
 .ib-tope,.ib-hover-tope:hover{color:#fff!important;background-color:rgb(199,153,136)!important}
