@@ -31,9 +31,9 @@ a {
 .ib-bar .ib-bar-item{float:right;width:auto;border:1px;display:block;outline:0;line-height:18px;}
 .ib-bar .ib-dropdown-hover,.ib-bar .ib-dropdown-click{position:static;float:left}
 
-.ib-bar .ib-button{white-space:normal;background-color: #e3e6d8;color: #000333; font-size: 25px;padding:20px 10px 5px 10px;text-decoration: none;}
+.ib-bar .ib-button{white-space:normal;background-color: #e3e6d8;color: #000333; font-size: 25px;padding:20px 55px 5px 45px;text-decoration: none;}
 
-.ib-bar-block .ib-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.ib-bar-block .ib-bar-item{width:100%;display:block;padding:8px 15px;text-align:left;border:none;white-space:normal;float:none;outline:0}
 .ib-bar-block .ib-center .ib-bar-item{text-align:center}
 .ib-block{display:block;width:100%}
 .ib-card-small{box-shadow:0 2px 2px 0 rgba(0,0,0,0.16)} */
@@ -138,7 +138,7 @@ a {
   background-color: #faffff;
   width: 80%;
   height: auto;
-  display:flex;
+
 
 }
 #box-3{
@@ -146,23 +146,22 @@ a {
   width: 10%;
   height: 100%;
 }
-
+#text-box {
+  background-color: #faffff;
+}
 
 p {
-  padding: 80px 15px 5px 15px;
-  font-size: 3vw;
-  text-align: justify;
 
-
+  font-size: 2vw;
+  padding-top: 80px;
 }
 
 #bioPhoto {
-
-	height:65px;
-	width:auto;
-	padding: 80px 20px 0px 0px;
   float: left;
   margin-right: 1em;
+  max-width: 200px;
+  max-height: 100px;
+  padding-top: 70px;
 }
 </style>
 <body class="animate-opacity">
@@ -179,10 +178,10 @@ p {
     </a>
     <!-- Left-sided navbar links -->
     <div class="ib-left ib-hide-small">
-      <a href="#" class="ib-bar-item ib-button">Bio</a>
-      <a href="#" class="ib-bar-item ib-button">Listen</a>
       <a href="#" class="ib-bar-item ib-button">Lessons</a>
-      <a href="#" class="ib-bar-item ib-button">Home</a>
+      <a href="#" class="ib-bar-item ib-button">Listen</a>
+      <a href="#" class="ib-bar-item ib-button">Bio</a>
+
 
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -195,10 +194,10 @@ p {
 <!-- Sidenav for screens < 450px -->
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Bio</a>
+  <a href="#">chicagooboelessons</a>
   <a href="#">Listen</a>
-  <a href="#">Lessons</a>
-  <a href="#">Home</a>
+  <a href="#">Bio</a>
+
 </div>
 
 <script>
@@ -215,7 +214,8 @@ function closeNav() {
 <div id="box-container">
   <div id="box-1"></div>
   <div id="box-2">
-    <img id="bioPhoto" src="ibLogo2.jpg">
+    <div id="text-box">
+    <img id="bioPhoto" src="ibLogo2.jpg"/>
 
       <p>Lorem ipsum dolor sit amet,
         consectetur adipiscing elit.
@@ -230,12 +230,13 @@ function closeNav() {
         mi tincidunt.Vivamus lectus lectus, volutpat sit amet pulvinar non,
         posuere vitae nisl. Quisque dictum urna leo, in cursus orci.
         Mauris consequat tincidunt ultricies. Suspendisse potenti. Donec sodales,
-         ligula nec semper dictum, quam nisi posuere nisl, nec pretium massa leo
-         eget tellus. Nulla enim tortor, fringilla suscipit lacinia et, dictum
-         et ipsum. Duis ultrices accumsan condimentum. Fusce bibendum lectus
-         nec eros venenatis sodales. Quisque sit amet velit leo.
+        ligula nec semper dictum, quam nisi posuere nisl, nec pretium massa leo
+        eget tellus. Nulla enim tortor, fringilla suscipit lacinia et, dictum
+        et ipsum. Duis ultrices accumsan condimentum. Fusce bibendum lectus
+        nec eros venenatis sodales. Quisque sit amet velit leo.
         felis nisi mattis purus, non aliquam dolor augue sed odio.</p>
     </div>
+  </div>
   <div id="box-3"></div>
 
 </div>
