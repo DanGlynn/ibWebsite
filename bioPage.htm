@@ -1,10 +1,9 @@
 <html lang="en-US">
 <head>
-<script src="//use.edgefonts.net/adamina;bubblegum-sans;economica;pt-sans-narrow;ubuntu-condensed.js"></script>
 
 <link rel="shortcut icon" type="image/x-icon" href="ibLogo.jpg"/>
 
-<link href='https://fonts.googleapis.com/css?family=Montserrat:150,200' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:150,200,500' rel='stylesheet'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bio</title>
@@ -17,21 +16,36 @@ body {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-weight: 150;
-  background-color: #e3e6d8;
+  background-color: #ffffff;
   text-decoration: none;
+  margin: 0px;
+}
+#page-wrapper {
+  position:relative;
+}
+p {
+  margin-top: 80px;
+  font-size: 2vw;
+  padding-top: 80px 10px 10px 10px;
+  color: #000333;
+}
+h1 { font-size: 60px;
+     font-weight: 500;
+     padding: 20px;
+     color: #000333;
 }
 a {
   text-decoration: none;
 }
-.ib-top,.ib-bottom{position:fixed; width:100%;z-index:1}
-.ib-top{top:0; left:0;}.ib-bottom{bottom:0}
+.ib-top,.ib-bottom{position:relative; margin: auto; width:100%;z-index:1}
+.ib-top{top:0;}.ib-bottom{bottom:0}
 .ib-top a:hover {color: #8c8c8c;}
 .ib-bar{width:100%;overflow:hidden}
 .ib-center .ib-bar{display:inline-block;width:auto;line-height:18px;}
 .ib-bar .ib-bar-item{float:right;width:auto;border:1px;display:block;outline:0;line-height:18px;}
 .ib-bar .ib-dropdown-hover,.ib-bar .ib-dropdown-click{position:static;float:left}
 
-.ib-bar .ib-button{white-space:normal;background-color: #e3e6d8;color: #000333; font-size: 25px;padding:20px 55px 5px 45px;text-decoration: none;}
+.ib-bar .ib-button{white-space:normal;background-color: #ffffff;color: #000333; font-size: 25px;padding:20px 55px 5px 45px;text-decoration: none;}
 
 .ib-bar-block .ib-bar-item{width:100%;display:block;padding:8px 15px;text-align:left;border:none;white-space:normal;float:none;outline:0}
 .ib-bar-block .ib-center .ib-bar-item{text-align:center}
@@ -51,10 +65,17 @@ a {
   .ib-left{float:left!important;padding:5px;
     }
   }
+  @media (max-width:960px) and (min-width:771px){
+    .ib-left{float:left; padding: 5px;}
+    .ib-bar-item{width:100%;padding:8px 15px;}
+    .ib-bar .ib-button {padding:20px 45px 5px 10px;}
+  }
 
 @media (min-width:993px){
   .ib-hide-large{display:none!important
   }
+}
+
 }
 #myNavbar{
 }
@@ -65,7 +86,7 @@ a {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #e3e6d8;
+    background-color: #ffffff;
     color: #000333;
     overflow-x: hidden;
     transition: 0.5s;
@@ -101,7 +122,7 @@ a {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-.ib-tope,.ib-hover-tope:hover{color:#fff!important;background-color:#e3e6d8!important}
+.ib-tope,.ib-hover-tope:hover{color:#fff!important;background-color:#ffffff!important}
 #ibLogo {
   top: 0;
 	height:40px;
@@ -109,38 +130,13 @@ a {
 	padding: 0px 5px 0px 0px;
   letter-spacing: 0px;
 }
-
-#box-container{
-    display: flex;
-    height: 100%;
-
-}
-
-#box-1 {
-    background-color: #e3e6d8;
-    width: 10%;
-    height: 100%;
-}
-#box-2 {
-  background-color: #faffff;
-  width: 80%;
-  height: auto;
-  padding: 5px;
-
-}
-#box-3{
-  background-color: #e3e6d8;
-  width: 10%;
-  height: 100%;
-}
-#text-box {
-  background-color: #faffff;
-}
-
-p {
-  margin-top: 80px;
-  font-size: 2vw;
-  padding-top: 80px 10px 10px 10px;
+@media (max-width: 450px){
+  #ibLogo {
+    height:40px;
+    padding: 0px;
+  }
+  .ib-bar-item{width:100%;padding:8px 15px;}
+  .ib-bar .ib-button {padding:20px 20px 5px 20px;}
 }
 
 #bioPhoto {
@@ -151,6 +147,92 @@ p {
   max-height: auto;
 
 }
+#box-container{
+    display: flex;
+    height: 100%;
+
+}
+@media (max-width:899px){
+  #box-container {
+    display:none;
+  }
+  .ib-top,.ib-bottom{position:fixed; margin: auto; width:100%;z-index:1; box-shadow:0px 2px #f4f6f9;}
+  .ib-top{top:0;}.ib-bottom{bottom:0}
+  .ib-bar .ib-button .ib-bar-item {padding:20px 10px 5px 10px;}
+  #box-container-small {
+    display: flex;
+    height:100%;
+    flex-direction: column;
+    align-items:center;
+  }
+  #bioPhoto {
+    float: none;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:95%;
+    height: auto;
+
+  }
+
+  p {
+    margin-top:0px;
+    font-size: 16px;
+    padding: 10px;
+  }
+  h1 { font-size: 28px;
+       font-weight: 500;
+       padding: 20px;
+       color: #000333;
+  }
+}
+
+#box-1 {
+    background-color: #ffffff;
+    width: 10%;
+    height: 100%;
+}
+#box-2 {
+  background-color: #ffffff;
+  width: 80%;
+  height: auto;
+  padding: 5px;
+
+}
+#box-3{
+  background-color: #ffffff;
+  width: 10%;
+  height: 100%;
+}
+#text-box {
+  background-color: #ffffff;
+}
+#box-container-small {
+  display: flex;
+  height:100%;
+  flex-direction: column;
+  margin-top: 80px;
+}
+@media (min-width:900px){
+  #box-container-small{
+    display:none;
+  }
+}
+#photo-box-small{
+background-color: #ffffff;
+height:auto;
+width: 80%;
+}
+#text-box-small{
+background-color: #ffffff;
+height:auto;
+width: 80%;
+
+}
+
+
+
 .animate-opacity{
   animation:opac 3.0s
 }@keyframes opac{
@@ -159,16 +241,17 @@ p {
 }
 }
 </style>
+<div id="page-wrapper">
 <body class="animate-opacity">
 
 
 <!-- Responsive Nav Bar section -->
 <div class="ib-top">
-  <div class="ib-bar ib-tope ib-card" id="myNavbar">
+  <div class="ib-bar ib-tope" id="myNavbar">
     <a href="#" class="ib-bar-item ib-button ib-wide">
 <!-- Looking to integrate in logo image here  -->
 
- <img id="ibLogo" src="ibLogo2.jpg"/>
+ <img id="ibLogo" src="ibLogo3.jpg"/>
 
     </a>
     <!-- Left-sided navbar links -->
@@ -211,7 +294,7 @@ function closeNav() {
   <div id="box-2">
     <div id="text-box">
     <img id="bioPhoto" src="insung.jpg"/>
-
+      <h1>Bio</h1>
       <p>Lorem ipsum dolor sit amet,
         consectetur adipiscing elit.
         Nullam vel urna et libero lobortis porta.
@@ -235,7 +318,32 @@ function closeNav() {
   <div id="box-3"></div>
 
 </div>
+<div id="box-container-small">
+  <div id="photo-box-small"><img id="bioPhoto" src="insung.jpg"/></div>
+    <div id="text-box-small">
+        <h1>Bio</h1>
+      <p>Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit.
+        Nullam vel urna et libero lobortis porta.
+        Integer elementum sapien vitae tellus
+        sollicitudin volutpat. Sed lobortis blandit ullamcorper.
+        Duis risus eros, rhoncus blandit mattis quis, malesuada quis nisi.
+        Ut quis leo vel est fringilla sagittis. Nullam cursus urna sit amet
+        justo egestas eget luctus neque placerat. Aenean tristique vulputate
+        lacus, consectetur iaculis ligula bibendum at. Vivamus id lectus eros,
+        eu molestie risus. Nullam interdum turpis vel turpis convallis ac porta
+        mi tincidunt.Vivamus lectus lectus, volutpat sit amet pulvinar non,
+        posuere vitae nisl. Quisque dictum urna leo, in cursus orci.
+        Mauris consequat tincidunt ultricies. Suspendisse potenti. Donec sodales,
+        ligula nec semper dictum, quam nisi posuere nisl, nec pretium massa leo
+        eget tellus. Nulla enim tortor, fringilla suscipit lacinia et, dictum
+        et ipsum. Duis ultrices accumsan condimentum. Fusce bibendum lectus
+        nec eros venenatis sodales. Quisque sit amet velit leo.
+        felis nisi mattis purus, non aliquam dolor augue sed odio.</p>
+    </div>
 
+</div>
+</div>
 
 
   </body>
